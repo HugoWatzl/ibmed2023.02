@@ -1,0 +1,56 @@
+
+#questão 1 ac2
+
+def salario( horas , numero ):
+
+    num = horas * numero 
+    return num 
+
+horas = float(input("salario por hora de :"))
+numero = float(input("numero de horas trabalhadas no mes foi de :"))
+
+num2 = salario( horas , numero )
+print("o salario a receber e de :" , num2 )
+
+
+#questao 2 ac2
+
+def calculo( n1 , n2 , n3 ):
+    produto =  (( n1 * 2 ) * ( n2 / 2 ))
+    soma = ( n1 * 3 ) + n3
+    cubo = n3 ** 3 
+    return produto , soma , cubo
+
+n1 = float(input("primeiro numero :"))
+n2 = float(input("segundo numero :"))
+n3 = float(input("terceiro numero:"))
+
+num = calculo( n1 , n2 , n3)
+
+print( num )
+
+
+# questao 3 c2 
+
+def calculo( n1 , n2 , n3 ):
+    produto =  (( n1 * 2 ) * ( n2 / 2 ))
+    soma = ( n1 * 3 ) + n3
+    cubo = n3 ** 3 
+    return produto , soma , cubo
+
+n1 = float(input("primeiro numero :"))
+n2 = float(input("segundo numero :"))
+n3 = float(input("terceiro numero:"))
+
+num = calculo( n1 , n2 , n3) # opicional nesse caso 
+
+# questao 4 ac2 
+
+ano = int(input("Digite o ano: "))
+
+def binario_ou_n( ano ):
+    return (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0)
+
+print( binario_ou_n( ano ))
+    
+
